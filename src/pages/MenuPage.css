@@ -1,0 +1,88 @@
+.menu-page {
+    padding: 20px;
+  }
+  
+  header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .category-filter button {
+    margin-right: 10px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+  }
+  
+  .category-filter button.active {
+    background-color: #ffa500;
+    color: white;
+  }
+  
+  .dietary-filter label {
+    margin-right: 10px;
+  }
+  
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .menu-item {
+    position: relative;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .menu-info {
+    padding: 10px;
+  }
+  
+  .hover-actions {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .menu-item:hover .hover-actions {
+    opacity: 1;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .pagination button.active {
+    background-color: #ffa500;
+    color: white;
+  }
+  

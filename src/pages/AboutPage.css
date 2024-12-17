@@ -1,0 +1,109 @@
+.about-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1,
+  h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  /* Business Story & Mission */
+  .business-story,
+  .mission {
+    margin-bottom: 30px;
+  }
+  
+  /* Timeline */
+  .timeline {
+    margin-bottom: 30px;
+  }
+  
+  .timeline-container {
+    border-left: 2px solid #ddd;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .timeline-item span {
+    font-weight: bold;
+    color: #555;
+    background-color: #f4f4f4;
+    padding: 5px 10px;
+    border-radius: 20px;
+    position: absolute;
+    left: -35px;
+  }
+  
+  .timeline-item p {
+    margin-left: 10px;
+  }
+  
+  /* Team Section */
+  .team-gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .team-member {
+    width: 200px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .team-member:hover {
+    transform: scale(1.05);
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .member-details h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .member-details p {
+    color: #777;
+    font-size: 14px;
+  }
+  
+  .member-bio {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+  }
+  
+  .team-member:hover .member-bio {
+    display: block;
+  }
+  

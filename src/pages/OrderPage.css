@@ -1,0 +1,114 @@
+/* OrderPage.css */
+.order-page {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+  background-color: #f8f9fa;
+}
+
+.menu,
+.customization,
+.cart {
+  flex: 1;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu h2,
+.customization h2,
+.cart h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.menu-item {
+  width: calc(33% - 10px);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  background-color: #fafafa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: grab;
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.menu-item h3 {
+  margin: 5px 0;
+  color: #333;
+}
+
+.menu-item p {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.customization {
+  text-align: center;
+  min-height: 300px;
+  border: 2px dashed #007bff;
+}
+
+.customization.hovered {
+  background-color: #e8f0ff;
+}
+
+.size-options label,
+.add-ons label {
+  display: block;
+  margin: 5px 0;
+}
+
+.quantity input {
+  width: 50px;
+  padding: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.cart h3 {
+  margin: 5px 0;
+}
