@@ -47,8 +47,8 @@ function App() {
         {/* Footer */}
         <Footer />
         <DndProvider backend={HTML5Backend}>
-  <OrderPage />
-</DndProvider>
+        <OrderPage />
+         </DndProvider>
       </div>
     </Router>
   );

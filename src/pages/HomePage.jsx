@@ -8,6 +8,9 @@ const HomePage = () => {
     { id: 1, name: "Margherita Pizza", description: "Classic Italian pizza with fresh mozzarella.", image: "https://via.placeholder.com/300" },
     { id: 2, name: "Cheeseburger", description: "Juicy burger with cheddar cheese.", image: "https://via.placeholder.com/300" },
     { id: 3, name: "Chocolate Cake", description: "Rich and moist chocolate cake.", image: "https://via.placeholder.com/300" },
+    { id: 1, name: "Margherita Pizza", description: "Classic Italian pizza with fresh mozzarella.", image: "https://via.placeholder.com/300" },
+  { id: 2, name: "Cheeseburger", description: "Juicy burger with cheddar cheese.", image: "https://via.placeholder.com/300" },
+   { id: 3, name: "Chocolate Cake", description: "Rich and moist chocolate cake.", image: "https://via.placeholder.com/300" },
   ];
 
   const handleSearchChange = (e) => {

@@ -1,8 +1,16 @@
 /* Navigation Bar */
+.app{
+  background-color: white;
+}
+
 .navbar {
-  background-color: #333;
+  background-color: #ac6f6f;
   color: white;
   padding: 10px 0;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  height: 50px;
+  align-content: center;
 }
 
 .navbar ul {
@@ -10,11 +18,11 @@
   display: flex;
   justify-content: center;
   margin: 0;
-  padding: 0;
+  padding: 0px;
 }
 
 .navbar li {
-  margin: 0 15px;
+  margin: 0 50px;
 }
 
 .navbar a {

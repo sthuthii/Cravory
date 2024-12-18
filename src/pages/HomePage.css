@@ -1,8 +1,12 @@
 .home-page {
-    max-width: 900px;
+    width: 900px;
     margin: 0 auto;
     padding: 20px;
-    font-family: Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(88, 41, 41);
+    color: white;
+    border-radius: 100px;
+    align-content: center;
   }
   
   h1,
