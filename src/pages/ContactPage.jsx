@@ -92,7 +92,7 @@ const ContactPage = () => {
       </form>
 
       <div className="contact-info">
-        <h2>Contact Information</h2>
+        <h2 className="contact">Contact Information</h2>
         <p>📍 Address: 123 Foodie Lane, Foodtown, FL</p>
         <p>📞 Phone: (123) 456-7890</p>
         <p>📧 Email: contact@foodorderapp.com</p>

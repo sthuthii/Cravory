@@ -5,12 +5,12 @@ const HomePage = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
   const featuredItems = [
-    { id: 1, name: "Margherita Pizza", description: "Classic Italian pizza with fresh mozzarella.", image: "https://via.placeholder.com/300" },
-    { id: 2, name: "Cheeseburger", description: "Juicy burger with cheddar cheese.", image: "https://via.placeholder.com/300" },
-    { id: 3, name: "Chocolate Cake", description: "Rich and moist chocolate cake.", image: "https://via.placeholder.com/300" },
-    { id: 1, name: "Margherita Pizza", description: "Classic Italian pizza with fresh mozzarella.", image: "https://via.placeholder.com/300" },
-  { id: 2, name: "Cheeseburger", description: "Juicy burger with cheddar cheese.", image: "https://via.placeholder.com/300" },
-   { id: 3, name: "Chocolate Cake", description: "Rich and moist chocolate cake.", image: "https://via.placeholder.com/300" },
+    { id: 1, name: "Margherita Pizza", description: "Classic Italian pizza with fresh mozzarella.", image: "/images/margherita.jpg"  },
+    { id: 2, name: "Cheeseburger", description: "Juicy burger with cheddar cheese.", image: "/images/cheese-b.jpg" },
+    { id: 3, name: "Chocolate Cake", description: "Rich and moist chocolate cake.", image: "/images/chocolate.jpg" },
+    { id: 1, name: "Rajma Kebab", description: "Vegan kidney bean patties.", image: "/images/rajma.jpg" },
+  { id: 2, name: "Salmon steak", description: "Luscious Salmon steak with sambal salad.", image: "/images/salmon-steak.jpg" },
+   { id: 3, name: "Chicken shashlik Kebabs", description: "Delicious spicy Indo-Chinese chicken shashlik kebabs.", image: "/images/chicken.jpg" },
   ];
 
   const handleSearchChange = (e) => {

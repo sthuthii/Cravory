@@ -3,16 +3,23 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  color: rgb(107,9,9);
+  background-color: white;
   gap: 20px;
-  background-color: #f8f9fa;
+  background-color: transparent;
+  font-family: 'Courier New', Courier, monospace;
 }
 
+p{
+  color: rgb(107,9,9);
+}
 .menu,
 .customization,
 .cart {
   flex: 1;
   padding: 15px;
-  background-color: #fff;
+  background-color: white;
+  color: rgb(107, 13, 13);
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -23,6 +30,7 @@
 .cart h2 {
   text-align: center;
   margin-bottom: 15px;
+
 }
 
 .menu-list {
@@ -41,6 +49,7 @@
   background-color: #fafafa;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   cursor: grab;
+
 }
 
 .menu-item img {

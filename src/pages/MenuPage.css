@@ -19,11 +19,12 @@
     border: none;
     cursor: pointer;
     background-color: #f4f4f4;
+    color: rgb(108,7,7);
     border-radius: 5px;
   }
   
   .category-filter button.active {
-    background-color: #ffa500;
+    background-color: rgb(108,7,7);
     color: white;
   }
   
@@ -33,16 +34,19 @@
   
   .menu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
+
   }
   
   .menu-item {
     position: relative;
     text-align: center;
-    border: 1px solid #ddd;
+    border: 100px solid #f4efef;
     border-radius: 8px;
     overflow: hidden;
+
+  
   }
   
   .menu-item img {
@@ -82,7 +86,7 @@
   }
   
   .pagination button.active {
-    background-color: #ffa500;
+    background-color: rgb(108,7,7);
     color: white;
   }
   
