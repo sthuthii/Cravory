@@ -19,7 +19,7 @@
     border: none;
     cursor: pointer;
     background-color: #f4f4f4;
-    color: rgb(108,7,7);
+    color: rgb(111, 21, 21);
     border-radius: 5px;
   }
   
@@ -30,10 +30,11 @@
   
   .dietary-filter label {
     margin-right: 10px;
+    color: white;
   }
   
   .menu-grid {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 

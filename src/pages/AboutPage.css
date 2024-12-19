@@ -14,7 +14,7 @@
     color: white;
   }
   
-  p {
+ .about-page p {
     line-height: 1.6;
     margin-bottom: 15px;
     color: white;
@@ -50,11 +50,12 @@
     padding: 5px 10px;
     border-radius: 20px;
     position: absolute;
-    left: -35px;
+    left: -50px;
   }
   
   .timeline-item p {
     margin-left: 10px;
+    color: white;
   }
   
   /* Team Section */
@@ -93,6 +94,7 @@
   .member-details p {
     color: rgb(255, 255, 255);
     font-size: 14px;
+    color: white;
   }
   
   .member-bio {
