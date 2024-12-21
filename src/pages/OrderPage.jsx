@@ -4,9 +4,9 @@ import PropTypes from "prop-types";
 import "./OrderPage.css";
 
 const menuItems = [
-  { id: 1, name: "Margherita Pizza", basePrice: 8.99, image: "/images/pizza.jpg" },
-  { id: 2, name: "Sushi Platter", basePrice: 15.99, image: "/images/sushi.jpg" },
-  { id: 3, name: "Burger Deluxe", basePrice: 12.99, image: "/images/burger.jpg" },
+  { id: 1, name: "Margherita Pizza", basePrice: 8.99, image: "/images/margherita.jpg" },
+  { id: 2, name: "Grilled Salmon", basePrice: 15.99, image: "/images/grilled.jpg" },
+  { id: 3, name: "Vegan Burger", basePrice: 12.99, image: "/images/vegan_burger.jpg" },
 ];
 
 const sizes = [
@@ -28,18 +28,15 @@ const OrderPage = () => {
   const [selectedAddOns, setSelectedAddOns] = useState([]);
   const [quantity, setQuantity] = useState(1);
 
-  // Restore cart from localStorage
   useEffect(() => {
     const savedCart = JSON.parse(localStorage.getItem("cart")) || [];
     setCart(savedCart);
   }, []);
 
-  // Save cart to localStorage
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
 
-  // Add item to cart
   const addToCart = () => {
     const totalAddOnPrice = selectedAddOns.reduce((sum, addOn) => sum + addOn.price, 0);
     const sizeMultiplier = sizes.find((s) => s.size === selectedSize).multiplier;
@@ -54,16 +51,20 @@ const OrderPage = () => {
     };
 
     setCart([...cart, item]);
-    setCurrentItem(null); // Clear customization panel
+    setCurrentItem(null);
   };
 
-  // Remove item from cart
   const removeFromCart = (index) => {
     const updatedCart = cart.filter((_, i) => i !== index);
     setCart(updatedCart);
   };
 
-  // Drag-and-Drop Handlers
+  const checkout = () => {
+    const totalCost = cart.reduce((sum, item) => sum + parseFloat(item.totalPrice), 0).toFixed(2);
+    alert(`Your total is $${totalCost}. Thank you for your order!`);
+    setCart([]); // Clear the cart after checkout
+  };
+
   const [{ isOver }, dropRef] = useDrop({
     accept: "menu-item",
     drop: (item) => setCurrentItem(item),
@@ -87,7 +88,6 @@ const OrderPage = () => {
     );
   };
 
-  // PropTypes validation for MenuItem
   MenuItem.propTypes = {
     item: PropTypes.shape({
       id: PropTypes.number.isRequired,
@@ -171,18 +171,21 @@ const OrderPage = () => {
       <section className="cart">
         <h2>Cart</h2>
         {cart.length > 0 ? (
-          <ul>
-            {cart.map((item, index) => (
-              <li key={index}>
-                <h3>{item.name}</h3>
-                <p>Size: {item.size}</p>
-                <p>Add-Ons: {item.addOns.join(", ") || "None"}</p>
-                <p>Quantity: {item.quantity}</p>
-                <p>Total: ${item.totalPrice}</p>
-                <button onClick={() => removeFromCart(index)}>Remove</button>
-              </li>
-            ))}
-          </ul>
+          <>
+            <ul>
+              {cart.map((item, index) => (
+                <li key={index}>
+                  <h3>{item.name}</h3>
+                  <p>Size: {item.size}</p>
+                  <p>Add-Ons: {item.addOns.join(", ") || "None"}</p>
+                  <p>Quantity: {item.quantity}</p>
+                  <p>Total: ${item.totalPrice}</p>
+                  <button onClick={() => removeFromCart(index)}>Remove</button>
+                </li>
+              ))}
+            </ul>
+            <button onClick={checkout} className="checkout">Checkout</button>
+          </>
         ) : (
           <p>Your cart is empty.</p>
         )}

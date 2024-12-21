@@ -2,11 +2,11 @@ import { useState} from "react";
 import "./MenuPage.css";
 
 const menuItems = [
-  { id: 1, name: "Caesar Salad", category: "Starters", price: 8.99, image: "/images/salad.jpg", dietary: ["vegetarian"] },
-  { id: 2, name: "Chicken Wings", category: "Starters", price: 12.99, image: "/images/wings.jpg", dietary: ["gluten-free"] },
-  { id: 3, name: "Grilled Salmon", category: "Main Course", price: 15.99, image: "/images/salmon.jpg", dietary: ["gluten-free"] },
-  { id: 4, name: "Vegan Burger", category: "Main Course", price: 13.99, image: "/images/burger.jpg", dietary: ["vegan"] },
-  { id: 5, name: "Chocolate Cake", category: "Desserts", price: 6.99, image: "/images/cake.jpg", dietary: ["vegetarian"] },
+  { id: 1, name: "Caesar Salad", category: "Starters", price: 8.99, image: "/images/caesar.jpg", dietary: ["vegetarian"] },
+  { id: 2, name: "Chicken Wings", category: "Starters", price: 12.99, image: "/images/chicken_wings.jpg", dietary: ["gluten-free"] },
+  { id: 3, name: "Grilled Salmon", category: "Main Course", price: 15.99, image: "/images/grilled.jpg", dietary: ["gluten-free"] },
+  { id: 4, name: "Vegan Burger", category: "Main Course", price: 13.99, image: "/images/vegan_burger.jpg", dietary: ["vegan"] },
+  { id: 5, name: "Chocolate Cake", category: "Desserts", price: 6.99, image: "/images/chocolate.jpg", dietary: ["vegetarian"] },
   { id: 6, name: "Fruit Platter", category: "Desserts", price: 5.99, image: "/images/fruit.jpg", dietary: ["vegan", "gluten-free"] },
 ];
 

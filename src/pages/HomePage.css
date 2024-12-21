@@ -47,6 +47,24 @@
     width: 300px;
     text-align: center;
   }
+
+  .carousel-item img{
+    animation: float ease-in-out  5s infinite;
+  }
+
+   @keyframes float{
+    0%{
+      transform: translateY(0);
+    }
+    50%{
+      transform: translateY(-10px);
+    }
+    100%{
+      transform: translateY(0);
+    }
+   }
+  
+  
   
   .carousel-item img {
     width: 100%;
@@ -83,6 +101,7 @@
     width: 300px;
     text-align: center;
     color: white;
+
   }
   
   .featured-item img {
@@ -92,10 +111,21 @@
     margin-bottom: 10px;
   }
 
-  .featured-item img:hover{
-    padding: 10px;
+  .featured-item:hover{
+    animation: scale 3s ease-in-out infinite;
   }
   
+  @keyframes scale{
+    0%{
+      scale: 100%;
+    }
+    50%{
+      scale: 105%;
+    }
+    100%{
+      scale: 100%;
+    }
+  }
   .featured-item h3 {
     font-size: 18px;
     margin-bottom: 5px;

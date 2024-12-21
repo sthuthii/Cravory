@@ -121,3 +121,6 @@ button:hover {
 .cart h3 {
   margin: 5px 0;
 }
+.checkout{
+  background-color: rgb(107, 13, 13);
+}
